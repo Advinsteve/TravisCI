@@ -1,8 +1,13 @@
+os:
+  - linux
+
+dist: focal
+
 language: node_js
+
 node_js:
   - "16"
+
 script:
   - npm install
-  - npm install --save-dev cross-env
   - npm run android
-
